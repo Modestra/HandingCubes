@@ -12,7 +12,7 @@ public class OutputPayLine : MonoBehaviour
     void Update()
     {
         RaycastHit hit;
-        Ray ray = new Ray(transform.position, transform.TransformDirection(Vector3.forward));
-        Debug.DrawLine(transform.position, transform.TransformDirection(Vector3.forward), Color.red);
+        Ray ray = new Ray(transform.position, transform.up);
+        Debug.DrawLine(transform.position, transform.up, Color.red);
     }
 }
